@@ -1,0 +1,26 @@
+/**
+ *
+ * MODULE ONE STYLES
+ *
+ */
+
+#OI-MODULE-TWO {
+
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: $oi-primary;
+	// border: 1rem dotted red;
+	.content-block {
+
+		.mod-title {
+			color: $gainsboro;
+		}
+		.mod-subtitle {
+			color: $smoke;
+		}
+		.text-only {
+			color: $snow;
+		}
+
+	}
+}

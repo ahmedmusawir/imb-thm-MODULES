@@ -6,92 +6,23 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Wandervale
+ * @package Moose_Framework
  */
-wp_footer();
+
 ?>
-		<div class="footer-container container-fluid">
 
-			<footer id="footer-main" class="footer-main">
+	</div><!-- #content -->
 
-				<article class="col-sm-12 col-md-12 col-lg-12">
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'moose-frame' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'moose-frame' ), 'WordPress' ); ?></a>
+			<span class="sep"> | </span>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'moose-frame' ), 'moose-frame', '<a href="http://www.htmlfivedev.com" rel="designer">Da Moose</a>' ); ?>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
 
-					<aside id="text-1" class="widget-footer-container widget_text">
-
-						<?php 
-							if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
-								return;
-							}
-
-							dynamic_sidebar( 'footer-sidebar-1' ); 
-
-						?>
-
-				   	</aside>
-
-				
-				</article>
-
-				<article class="col-sm-12 col-md-12 col-lg-12">
-
-					<aside id="text-2" class="widget-footer-container widget_text">
-
-						<?php 
-							if ( ! is_active_sidebar( 'footer-sidebar-2' ) ) {
-								return;
-							}
-
-							dynamic_sidebar( 'footer-sidebar-2' ); 
-
-						?>
-
-				   	</aside>
-
-				
-				</article>
-
-				<article class="col-sm-12 col-md-12 col-lg-12">
-
-					<aside id="text-3" class="widget-footer-container widget_text">
-
-						<?php 
-							if ( ! is_active_sidebar( 'page-bottom' ) ) {
-								return;
-							}
-
-							dynamic_sidebar( 'page-bottom' ); 
-
-						?>
-
-				   	</aside>
-
-				
-				</article>
-
-
-
-				<!-- <div id="copyright" class="copyright col-sm-12 col-md-12 col-lg-12">
-					<h4>COPYRIGHT INSPIREBLISSFULBEGINNINGS.COM</h4>
-					<ul>
-						<li><a href="http://tianagustafson.com/privacy-policy/">PRIVACY POLICY</a> | </li>
-						<li><a href="http://tianagustafson.com/terms-of-service/">TERMS</a> | </li>
-						<li><a href="http://tianagustafson.com/earnings-disclaimer/">DISCLAIMER</a> </li>
-					</ul>
-				</div> -->
-				<!--==============================================================================
-				=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
-				===============================================================================-->
-				
-				<!-- <div style="color: white"><strong>Current template:</strong> <?php echo get_current_template( true ); ?></div> -->
-				
-				<!--====  End of THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH  ====-->
-				
-
-			</footer>
-		</div> <!-- FOOTER CONTAINER ENDED -->
-
-	</div> <!-- End of id="content" class="site-content" -->
-</div> <!-- End of id="page" class="site" -->
+<?php wp_footer(); ?>
 
 </body>
 </html>

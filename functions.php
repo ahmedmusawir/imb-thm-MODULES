@@ -222,6 +222,9 @@ require get_template_directory() . '/inc/jetpack.php';
 // Register Custom Navigation Walker
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
+// MOOSE FRAMEWORK MODULE FUNCTIONS
+require get_template_directory() . '/_MOOSEFRAME-MODULES/module-functions.php';
+
 
 // Replaces the excerpt "more" text by a link
 // function new_excerpt_more($more) {

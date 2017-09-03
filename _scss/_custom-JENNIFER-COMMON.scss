@@ -1,7 +1,6 @@
-$oi-primary: #e49306; //dark orange
-$oi-primary: #1081aa; //dark cyan
-$oi-secondary: #6e6e6e; //dim gray
-$oi-third: #484a4b; //dark slate gray
+$imb-primary: #87cfbe; //sea green
+$imb-secondary: #ef4982; //almost hotpink
+$imb-third: #484a4b; //dark slate gray
 
 $imb-light-ash: #EBEFF2;
 $imb-gray: #2A2829; //dark gray
@@ -42,7 +41,7 @@ body {
 	}
 
 	h1,h2,h3,h4,h5 {
-		color: $oi-secondary;
+		color: $imb-secondary;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 
@@ -63,6 +62,20 @@ body {
 
 }
 
+// body:before {
+//     content: "";
+//     width: 735px;
+//     height: 398px;
+//     position: absolute;
+//     background-image: url(/wp-content/uploads/2017/02/header-bg-2-optimized.png);
+//     left: 0;
+//     display: block;
+//     background-size: 100% 100%;
+//     background-repeat: no-repeat;
+//     transform: scale(.65,.65);
+//     transform-origin: top left;
+//     z-index: 1;
+// }
 
 img {
     max-width: 100%;
@@ -110,22 +123,38 @@ img {
 /*==========================================
 =            General Page Stuff            =
 ==========================================*/
+/**
+ *
+ * Convertkit Naked Form
+ *
+ */
 
+.page .ck_form.ck_naked {
+    margin: 0px auto !important;
+    margin-top: -2rem !important;
+    max-width: 700px;
+}		
+
+#page-bottom-widget {
+	// border: 1px solid $imb-teal;
+	margin-top: 5rem;
+
+	#form-box {
+
+		padding: 3rem;
+		background-color: lighten( $imb-teal, 35% );
+
+		h2 {
+			font-size: 2.8rem;
+		}
+		h4 {
+			font-size: 2rem;
+		}
+
+	}
+}
 
 /*=====  End of General Page Stuff  ======*/
-
-/*=================================================
-=            MOOSEFRAME MODULES STYLES            =
-==================================================*/
-
-@import "MOOSEFRAME-MODULE-STYLES/oi-module-one";
-@import "MOOSEFRAME-MODULE-STYLES/oi-module-two";
-@import "MOOSEFRAME-MODULE-STYLES/oi-module-three";
-@import "MOOSEFRAME-MODULE-STYLES/oi-module-four";
-
-/*=====  End of MOOSEFRAME MODULES STYLES  ======*/
-
-
 			
 
 /*=======================================
@@ -149,7 +178,7 @@ img {
  * HOMR PAGE HERO UNIT (HEADER.PHP)
  *
  */
-// @import "PARTIALS/imb-home-top-hero-unit";
+@import "PARTIALS/imb-home-top-hero-unit";
 
 
 /**
@@ -157,14 +186,14 @@ img {
  * HOME PAGE TOP ROADMAP
  *
  */
-// @import "PARTIALS/imb-home-top-roadmap";
+@import "PARTIALS/imb-home-top-roadmap";
 
 /**
  *
  * HOME PAGE SOCIAL PROOF
  *
  */
-// @import "PARTIALS/imb-home-social-proof";
+@import "PARTIALS/imb-home-social-proof";
 
 
 /**
@@ -172,7 +201,7 @@ img {
  * HOME PAGE INFO BLOCK
  *
  */
-// @import "PARTIALS/imb-home-info-block";
+@import "PARTIALS/imb-home-info-block";
 
 
 /**
@@ -180,7 +209,7 @@ img {
  * HOME PAGE TESTIMONIAL
  *
  */
-// @import "PARTIALS/imb-home-testimonial";
+@import "PARTIALS/imb-home-testimonial";
 
 
 /*=====  End of Home page style END  ======*/
@@ -196,28 +225,28 @@ img {
  * ABOUT PAGE HERO UNIT 
  *
  */
-// @import "PARTIALS/imb-aboutpg-top-hero-unit";
+@import "PARTIALS/imb-aboutpg-top-hero-unit";
 
 /**
  *
  * ABOUT PAGE TOP ROADMAP
  *
  */
-// @import "PARTIALS/imb-aboutpg-roadmap";
+@import "PARTIALS/imb-aboutpg-roadmap";
 
 /**
  *
  * ABOUT PAGE SOCIAL PROOF
  *
  */
-// @import "PARTIALS/imb-aboutpg-social-proof";
+@import "PARTIALS/imb-aboutpg-social-proof";
 
 /**
  *
  * ABOUT PAGE TESTIMONIAL
  *
  */
-// @import "PARTIALS/imb-aboutpg-testimonial";
+@import "PARTIALS/imb-aboutpg-testimonial";
 
 
 /**
@@ -225,7 +254,7 @@ img {
  * ABOUT PAGE OPT IN CTA
  *
  */
-// @import "PARTIALS/imb-aboutpg-optin-CTA";
+@import "PARTIALS/imb-aboutpg-optin-CTA";
 
 
 
@@ -240,7 +269,16 @@ img {
 =            Work With Me            =
 ====================================*/
 
+#work-with-me-boxes {
+	img {
 
+		@include transition(all 1.0s ease-in-out);
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+}
 
 /*=====  End of Work With Me  ======*/
 
@@ -319,7 +357,7 @@ img {
 	h1 {
 		text-align: center;
 		font-size: 3rem;
-		color: darken( $oi-secondary, 0% );
+		color: darken( $imb-secondary, 0% );
 	}
 
 }
@@ -330,14 +368,14 @@ img {
  *
  */
 // @import "PARTIALS/_imb-blog-indx-page";
-// @import "PARTIALS/_heather-blog-indx-page";
+@import "PARTIALS/_heather-blog-indx-page";
 
 /**
  *
  * ARCHIVE INDEX PAGE STYLES
  *
  */
-// @import "PARTIALS/_imb-archive-page";
+@import "PARTIALS/_imb-archive-page";
 
 
 //**** Post footer icons
@@ -373,7 +411,7 @@ img {
  *
  */
 
- // @import "PARTIALS/_imb-blog-single-page";
+ @import "PARTIALS/_imb-blog-single-page";
 
 /**
  *
@@ -381,7 +419,7 @@ img {
  *
  */
 
- // @import "PARTIALS/_imb-praise-page";
+ @import "PARTIALS/_imb-praise-page";
 
  /**
  *
@@ -389,7 +427,7 @@ img {
  *
  */
 
- // @import "PARTIALS/_imb-contact-page";
+ @import "PARTIALS/_imb-contact-page";
 
 
 
@@ -404,7 +442,7 @@ img {
 	margin-top: 4rem;
 	.widget-title {
 		text-align: center;
-		color: $oi-primary !important;
+		color: $imb-primary !important;
 	}
 
 	/**
@@ -424,8 +462,8 @@ img {
 			// width: 120%;
 			width: 100px;
 			height: 40px;
-			border: 1px solid $oi-primary;
-			background-color: $oi-primary;
+			border: 1px solid $imb-primary;
+			background-color: $imb-primary;
 			color: white;
 			font-size: 2rem;
 
@@ -457,7 +495,7 @@ img {
 			@include transition(all 0.5s ease-in-out);
 
 				&:hover {
-					background-color: $oi-primary;
+					background-color: $imb-primary;
 				}
 
 
@@ -648,7 +686,7 @@ img {
 
 			&:hover {
 					color: $gray-lighter;
-				background-color: $oi-primary;
+				background-color: $imb-primary;
 			}			
 
 			a {
@@ -688,7 +726,7 @@ img {
 
 
 // @import "PARTIALS/imb-footer-gustafson";
-// @import "PARTIALS/imb-footer";
+@import "PARTIALS/imb-footer";
 
 
 /*=====  End of IMB FOOTER STYLES  ======*/

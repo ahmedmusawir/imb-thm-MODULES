@@ -1,0 +1,40 @@
+/**
+ *
+ * MODULE ONE STYLES
+ *
+ */
+
+#OI-MODULE-THREE {
+
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	// background: url(/wp-content/uploads/2017/06/jennifer-fp-hero-img-1920x800.jpg);
+	background: url("/wp-content/uploads/2017/09/Screen-Shot-2017-09-03-at-5.17.30-PM.png") no-repeat left top fixed;
+
+	  -webkit-background-size: cover;
+
+	  -moz-background-size: cover;
+
+	  -o-background-size: cover;
+
+	  background-size: cover;	
+	// border: 1rem dotted red;
+	.content-block {
+
+		.mod-title {
+			color: $gainsboro;
+		}
+		.mod-subtitle {
+			color: $smoke;
+		}
+		.text-only {
+			// color: $snow;
+		}
+		.btn-holder {
+			.btn {
+				border-radius: 50px;
+			}
+		}
+
+	}	
+}

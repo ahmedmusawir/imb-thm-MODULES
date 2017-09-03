@@ -38,24 +38,24 @@
  *
  */
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    // background-color: $imb-primary;
+    // background-color: $oi-primary;
 }
 
 .navbar-container {
-	// border: 1rem solid $imb-primary;
-
+	// border: 1rem solid $oi-primary;
+	margin-bottom: -2rem;
 } 
 
 .navbar {
 	padding-top: 1.5rem;
 	padding-bottom: 60px;
 	border: 1px solid $gray-lighter;
-	margin-bottom: 0px;
+	// margin-bottom: 0px;
 	background-color: rgba( $gray-lighter, .7 );
 	font-family: 'Raleway', sans-serif;
 
 	@media ( max-width: 550px ) {
-		padding-bottom: 4rem;
+		// padding-bottom: 4rem;
 	}
 	
 
@@ -75,10 +75,10 @@
 	}
 	.navbar-toggle {
 
-		border: 3px solid lighten( $imb-primary, 20% );
+		border: 3px solid lighten( $oi-primary, 20% );
 		.icon-bar {
 			color: white;
-			background-color: $imb-primary;
+			background-color: $oi-primary;
 			&:hover {
 				color: white;
 			}
@@ -129,14 +129,14 @@
 
 			&:hover {
 				background-color: transparent;
-				// background-color: lighten( $imb-primary, 10% );
+				// background-color: lighten( $oi-primary, 10% );
 			}
 			a {
-				color: lighten( $imb-secondary, 0% );
+				color: lighten( $oi-secondary, 0% );
 				font-size: 1.5rem;
 				font-weight: 500;
 				&:hover {
-					color: lighten( $imb-secondary, 10% );
+					color: lighten( $oi-secondary, 10% );
 				}
 
 				@media ( min-width: 1200px ) {
@@ -151,7 +151,7 @@
 			a {
 				border-radius: 50px;
 				color: white;
-				background-color: darken( $imb-primary, 0% );
+				background-color: darken( $oi-primary, 0% );
 
 				&:hover {
 					// background-color: lighten( $oil, 10% );

@@ -1,0 +1,28 @@
+/**
+ *
+ * MODULE ONE STYLES
+ *
+ */
+
+#OI-MODULE-ONE {
+
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	// border: 1rem dotted red;
+	.content-block {
+		// @include clearfix();
+
+		.mod-title {
+			// color: $gainsboro;
+		}
+		.mod-subtitle {
+			// color: $smoke;
+		}
+		.text-only {
+			// color: $snow;
+			// padding: 5rem;
+			// border: 1rem solid red;
+			// margin-right: 5rem;
+		}
+	}	
+}
